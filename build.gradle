@@ -29,6 +29,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+
+    /* db정보 암호화 */
+    implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
+
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
     annotationProcessor 'org.projectlombok:lombok'

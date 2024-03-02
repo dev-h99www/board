@@ -10,10 +10,15 @@ server:
 spring:
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
-    username: board
-    password: board
+    url: ENC(JgK3fpp55Zp20DdwLr4hUkqwgjT1TNwyiejjh6wcH1sAS7jXMcCYdvn1EDzpNC6o)
+    username: ENC(e4Qvx7+NCwyxH1G6RjT5MA==)
+    password: ENC(dohL9HT+aZPueBjbgWeAaAjTs6aa0tSb)
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   config-location: classpath:mybatis-config.xml
+
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
